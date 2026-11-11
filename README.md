@@ -33,15 +33,15 @@ Right-click a file → **Convert to** → pick a format. The new file appears ne
 
 ## Install
 
-1. Download or clone this repo to a folder you'll keep. The menu points at this folder, so if you move it, run `setup.bat` again.
-2. Double-click **`setup.bat`**.
+Paste this into **PowerShell**:
 
-Or manually:
-
-```bash
-pip install -r requirements.txt
-python install_menu.py
+```powershell
+irm https://raw.githubusercontent.com/khan-shayan9/EZ-Convert/main/install.ps1 | iex
 ```
+
+It downloads the latest release to `%LOCALAPPDATA%\EZConvert`, installs the Python packages, and adds the right-click menu. Run the same command again to update. You can [read the script](install.ps1) first if you like.
+
+**Manual install:** Download the zip from [Releases](https://github.com/khan-shayan9/EZ-Convert/releases/latest) and extract it to a folder you'll keep. Then double-click **`setup.bat`**. The menu points at that folder, so if you move it, run `setup.bat` again.
 
 ## Use
 
@@ -51,11 +51,11 @@ python install_menu.py
 
 ## Uninstall
 
-```bash
-python install_menu.py --uninstall
+```powershell
+irm https://raw.githubusercontent.com/khan-shayan9/EZ-Convert/main/uninstall.ps1 | iex
 ```
 
-This removes the menu entries. The menu only uses your user registry keys (`HKCU`), so no admin rights are needed.
+This removes the menu and the install folder. For a manual install, run `python install_menu.py --uninstall` in its folder instead. The menu only uses your user registry keys (`HKCU`), so no admin rights are needed.
 
 ## Limitations
 
