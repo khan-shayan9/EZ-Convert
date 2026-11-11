@@ -1,5 +1,7 @@
 # EZConvert
 
+[![Latest release](https://img.shields.io/github/v/release/khan-shayan9/EZ-Convert)](https://github.com/khan-shayan9/EZ-Convert/releases/latest)
+
 Convert files from the Windows right-click menu, offline and with formatting kept.
 
 Right-click a file → **Convert to** → pick a format. The new file appears next to the original, and a small notification shows when it's done.
