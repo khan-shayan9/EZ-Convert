@@ -1,6 +1,8 @@
 # EZConvert
 
 [![Latest release](https://img.shields.io/github/v/release/khan-shayan9/EZ-Convert)](https://github.com/khan-shayan9/EZ-Convert/releases/latest)
+[![License](https://img.shields.io/github/license/khan-shayan9/EZ-Convert)](LICENSE)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 
 Convert files from the Windows right-click menu, offline and with formatting kept.
 
